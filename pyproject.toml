@@ -1,0 +1,26 @@
+[project]
+name = "fake-news-detector"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "TeejayAmdd", email = "jtee71708@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "joblib==1.6.0",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pydantic>=2.7",
+    "scikit-learn==1.9.1",
+    "scipy>=1.11",
+    "uvicorn[standard]>=0.30",
+]
+
+[project.scripts]
+fake-news-detector = "fake_news_detector:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
